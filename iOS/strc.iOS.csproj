@@ -94,6 +94,15 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.3.4.224\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.SfCarousel.iOS">
+      <HintPath>lib\Syncfusion.SfCarousel.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCarousel.XForms.iOS">
+      <HintPath>lib\Syncfusion.SfCarousel.XForms.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCarousel.XForms">
+      <HintPath>lib\Syncfusion.SfCarousel.XForms.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\strc\strc.csproj">
