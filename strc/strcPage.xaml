@@ -5,7 +5,10 @@
 	xmlns:syncfusion="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
 	xmlns:local="clr-namespace:strc"
 	x:Class="strc.strcPage">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0"/>
+	</ContentPage.Padding>
 	<ContentPage.Content>
-	    <syncfusion:SfCarousel x:Name="carousel" Duration="150" BackgroundColor="#4f275b" ViewMode="Linear"/>
+	    <syncfusion:SfCarousel x:Name="carousel" Duration="150" BackgroundColor="#4f275b" />
 	</ContentPage.Content>
 </ContentPage>
