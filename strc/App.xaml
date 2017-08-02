@@ -2,5 +2,19 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="strc.App">
 	<Application.Resources>
 		<!-- Application resource dictionary -->
+
+		<ResourceDictionary>
+			<Style x:Key="menuItemButton" TargetType="Button">
+				<Setter Property="VerticalOptions" Value="Center" />
+				<Setter Property="Margin" Value="10,0,10,0" />
+				<Setter Property="HeightRequest" Value="300" />
+			</Style>
+			<Style x:Key="menuItemView1" TargetType="ContentView">
+				<Setter Property="BackgroundColor" Value="#CCD256" />
+			</Style>
+			<Style x:Key="menuItemView2" TargetType="ContentView">
+				<Setter Property="BackgroundColor" Value="#836186" />
+			</Style>
+		</ResourceDictionary>
 	</Application.Resources>
 </Application>

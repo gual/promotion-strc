@@ -8,7 +8,13 @@
 	<ContentPage.Padding>
 		<OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0"/>
 	</ContentPage.Padding>
-	<ContentPage.Content>
-	    <syncfusion:SfCarousel x:Name="carousel" Duration="150" BackgroundColor="#4f275b" />
-	</ContentPage.Content>
+	<StackLayout BackgroundColor="#4f275b" >
+		<Label
+			Text="Conoce más sobre nosotros"
+			TextColor="White"
+			FontSize="18"
+			Margin="20,80,20,10"
+		/>
+	    <syncfusion:SfCarousel x:Name="carousel" Duration="150" ViewMode="Linear" />
+	</StackLayout>
 </ContentPage>

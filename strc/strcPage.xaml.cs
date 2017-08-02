@@ -2,6 +2,8 @@
 using Syncfusion.SfCarousel.XForms;
 using Xamarin.Forms;
 
+using strc.Views;
+
 namespace strc
 {
 	public partial class strcPage : ContentPage
@@ -12,10 +14,10 @@ namespace strc
 
 			var collectionOfItems = new ObservableCollection<SfCarouselItem>();
 
-			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new Button() { Image = "schools.jpg", Text = "ItemContent1", TextColor = Color.White, BackgroundColor = Color.FromHex("#ccd256"), FontSize = 12 } });
-			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new Button() { Image = "training.jpg", Text = "ItemContent1", TextColor = Color.White, BackgroundColor = Color.FromHex("#836186"), FontSize = 12 } });
-			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new Button() { Image = "history.jpg", Text = "ItemContent1", TextColor = Color.White, BackgroundColor = Color.FromHex("#ccd256"), FontSize = 12 } });
-			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new Button() { Image = "aliances.jpg", Text = "ItemContent1", TextColor = Color.White, BackgroundColor = Color.FromHex("#836186"), FontSize = 12 } });
+			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new SchoolsItemView() });
+			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new TrainingItemView() });
+			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new HistoryItemView() });
+			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new AliancesItemView() });
 
 			carousel.DataSource = collectionOfItems;
 
