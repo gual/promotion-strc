@@ -10,10 +10,22 @@
 				<Setter Property="HeightRequest" Value="300" />
 			</Style>
 			<Style x:Key="menuItemView1" TargetType="ContentView">
-				<Setter Property="BackgroundColor" Value="#CCD256" />
+				<Setter Property="BackgroundColor" Value="#836186" />
 			</Style>
 			<Style x:Key="menuItemView2" TargetType="ContentView">
-				<Setter Property="BackgroundColor" Value="#836186" />
+				<Setter Property="BackgroundColor" Value="#CCD256" />
+			</Style>
+			<Style x:Key="pageLayout" TargetType="StackLayout">
+				<Setter Property="Margin" Value="10,10,10,10" />
+				<Setter Property="Spacing" Value="15" />
+			</Style>
+			<Style x:Key="pageTitle" TargetType="Label">
+				<Setter Property="FontAttributes" Value="Bold" />
+				<Setter Property="FontSize" Value="25" />
+				<Setter Property="TextColor" Value="#836186" />
+			</Style>
+			<Style x:Key="pageText" TargetType="Label">
+				<Setter Property="LineBreakMode" Value="WordWrap" />
 			</Style>
 		</ResourceDictionary>
 	</Application.Resources>
